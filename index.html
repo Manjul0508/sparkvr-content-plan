@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>SparkVR Monthly Content Plan</title>
+  <title>SparkVR 30-Day Content Calendar</title>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
@@ -51,7 +51,7 @@
     }
 
     .container {
-      width: min(1240px, 92%);
+      width: min(1280px, 92%);
       margin: auto;
     }
 
@@ -357,7 +357,8 @@
       padding: 22px 22px 26px;
       box-shadow: var(--shadow);
       border-top: 6px solid var(--brown);
-      min-height: 540px;
+      min-height: 560px;
+      overflow-x: auto;
     }
 
     .calendar-card.green {
@@ -408,7 +409,7 @@
     .calendar-card h3 {
       font-family: Georgia, "Times New Roman", serif;
       color: #3d3028;
-      font-size: 26px;
+      font-size: 25px;
       line-height: 1.15;
       letter-spacing: -0.4px;
     }
@@ -423,18 +424,18 @@
       color: var(--green);
       font-family: Georgia, "Times New Roman", serif;
       text-transform: uppercase;
-      letter-spacing: 1.35px;
-      font-size: 13px;
-      padding: 12px 12px 14px;
+      letter-spacing: 1.2px;
+      font-size: 12px;
+      padding: 12px 9px 14px;
       border-bottom: 2px solid #ddd9d1;
     }
 
     .calendar-table td {
-      padding: 13px 12px;
+      padding: 13px 9px;
       border-bottom: 1px solid var(--line);
       vertical-align: middle;
       color: #3f3833;
-      font-size: 14px;
+      font-size: 13px;
     }
 
     .calendar-table tr:last-child td {
@@ -442,21 +443,31 @@
     }
 
     .date-cell {
-      width: 110px;
+      width: 92px;
       font-weight: 800;
       color: #2e2823 !important;
     }
 
     .date-cell span {
       display: block;
-      font-size: 12px;
+      font-size: 11px;
       color: #7a716b;
       font-weight: 600;
       margin-top: 2px;
     }
 
     .format-cell {
-      width: 96px;
+      width: 92px;
+    }
+
+    .idea-cell {
+      min-width: 150px;
+    }
+
+    .make-cell {
+      min-width: 170px;
+      color: #6e665f !important;
+      line-height: 1.45;
     }
 
     .idea-cell strong {
@@ -469,15 +480,15 @@
     .idea-cell span {
       display: block;
       color: #6e665f;
-      font-size: 13px;
+      font-size: 12px;
       line-height: 1.35;
     }
 
     .goal-cell {
-      width: 100px;
+      width: 90px;
       font-style: italic;
       color: #6e665f !important;
-      font-size: 13px !important;
+      font-size: 12px !important;
     }
 
     .format-badge {
@@ -498,6 +509,12 @@
       color: #4b403b;
       background: #f4efec;
       border-color: #ddd4ce;
+    }
+
+    .badge-carousel {
+      color: #407657;
+      background: #edf8f1;
+      border-color: #c5dfce;
     }
 
     .badge-reel {
@@ -553,7 +570,7 @@
 
     @media (max-width: 760px) {
       .container {
-        width: min(100% - 28px, 1240px);
+        width: min(100% - 28px, 1280px);
       }
 
       .topbar {
@@ -722,8 +739,10 @@
 
       .date-cell,
       .format-cell,
+      .make-cell,
       .goal-cell {
         width: 100%;
+        min-width: 100%;
       }
 
       .date-cell {
@@ -734,7 +753,8 @@
         font-size: 15px;
       }
 
-      .idea-cell span {
+      .idea-cell span,
+      .make-cell {
         font-size: 13px;
       }
 
@@ -758,7 +778,7 @@
         <div class="logo-mark">SV</div>
         <div class="brand-text">
           <strong>SparkVR</strong>
-          <span>Monthly Content Plan</span>
+          <span>30-Day Content Calendar</span>
         </div>
       </div>
 
@@ -787,13 +807,14 @@
 
           <p>
             This content calendar starts from 18 June 2026 and covers 30 days.
-            The plan includes 20 social media posts, 5 short reels, and 5 website blogs.
+            The plan includes 20 social media posts/carousels, 5 short reels, and 5 website blogs.
+            Reels can be created using stock visuals, motion graphics, text animation, AI visuals, and brand assets.
           </p>
 
           <div class="cover-info">
             <div class="info-card">
               <strong>20</strong>
-              <span>Social media posts</span>
+              <span>Social posts / carousels</span>
             </div>
 
             <div class="info-card">
@@ -823,7 +844,7 @@
         <div class="simple-card reveal">
           <h3>Goal</h3>
           <p>
-            To make more schools aware of SparkVR and explain how VR can help students learn better.
+            To make more schools aware of SparkVR and explain how VR can help students understand topics better.
           </p>
         </div>
 
@@ -837,7 +858,7 @@
         <div class="simple-card reveal">
           <h3>Style</h3>
           <p>
-            Clean, bright, school-friendly, and easy to understand with simple words and clear visuals.
+            Clean, bright, school-friendly, easy to understand, and possible to create without live shoots.
           </p>
         </div>
       </div>
@@ -889,10 +910,10 @@
                 Focuses on VR learning, product use, and classroom technology.
               </td>
               <td>
-                Show more product use, VR lesson examples, and school demo moments.
+                Show more product use, VR lesson examples, and school demo-style content.
               </td>
               <td>
-                SparkVR should focus on school workshops, student experience, and real classroom value.
+                SparkVR should focus on visual learning, student experience, and real classroom value.
               </td>
             </tr>
 
@@ -905,7 +926,7 @@
                 Offers 3D and 360° VR learning content for students from classes 5th to 10th.
               </td>
               <td>
-                Use simple posts, reels, blogs, and founder-led trust content.
+                Use simple posts, reels, blogs, motion graphics, and founder-led trust content.
               </td>
               <td>
                 Build awareness, explain benefits, show demos, and encourage school enquiries.
@@ -973,6 +994,7 @@
                 <th>Date</th>
                 <th>Format</th>
                 <th>Content Idea</th>
+                <th>How to Create Without Shoot</th>
                 <th>Purpose</th>
               </tr>
             </thead>
@@ -980,72 +1002,58 @@
             <tbody>
               <tr>
                 <td class="date-cell" data-label="Date">18 Jun<span>Thursday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>What is SparkVR?</strong>
-                  <span>Simple introduction of VR learning for schools</span>
-                </td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Social Post</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>VR Learning Introduction</strong><span>Simple starting post for the month</span></td>
+                <td class="make-cell" data-label="How to Create">Canva design with VR headset, classroom, or education icons</td>
                 <td class="goal-cell" data-label="Purpose">Awareness</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">19 Jun<span>Friday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-reel">Reel</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Enter the Chapter</strong>
-                  <span>Show how students can experience a topic in VR</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Reach</td>
-              </tr>
-
-              <tr>
-                <td class="date-cell" data-label="Date">20 Jun<span>Saturday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Why Visual Learning?</strong>
-                  <span>How visuals help students understand better</span>
-                </td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-carousel">Carousel</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Why Schools Should Explore VR Learning</strong><span>Simple school-focused explanation</span></td>
+                <td class="make-cell" data-label="How to Create">4-5 simple slides with icons and short points</td>
                 <td class="goal-cell" data-label="Purpose">Education</td>
               </tr>
 
               <tr>
+                <td class="date-cell" data-label="Date">20 Jun<span>Saturday</span></td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-reel">Reel</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Traditional Learning vs VR Learning</strong><span>Comparison-based short reel</span></td>
+                <td class="make-cell" data-label="How to Create">Stock classroom visuals + text animation + VR graphics</td>
+                <td class="goal-cell" data-label="Purpose">Awareness</td>
+              </tr>
+
+              <tr>
                 <td class="date-cell" data-label="Date">21 Jun<span>Sunday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-blog">Blog</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>VR in Education</strong>
-                  <span>Blog on how VR can improve classroom learning</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Website</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Social Post</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Visual Learning for Better Understanding</strong><span>Show visual learning as a simple concept</span></td>
+                <td class="make-cell" data-label="How to Create">Simple graphic with student, book, and 3D concept visuals</td>
+                <td class="goal-cell" data-label="Purpose">Engagement</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">22 Jun<span>Monday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Benefits of VR Learning</strong>
-                  <span>Simple benefits for students and schools</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Value</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Social Post</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Difficult Topics Made Easy</strong><span>Show how VR makes tough topics clearer</span></td>
+                <td class="make-cell" data-label="How to Create">Canva design using examples like science, space, anatomy</td>
+                <td class="goal-cell" data-label="Purpose">Education</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">23 Jun<span>Tuesday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Classes 5th to 10th</strong>
-                  <span>Show the class range SparkVR supports</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Info</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-blog">Blog</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Benefits of VR Learning in Schools</strong><span>Blog for schools and parents</span></td>
+                <td class="make-cell" data-label="How to Create">Research-based article with simple school-focused language</td>
+                <td class="goal-cell" data-label="Purpose">Website</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">24 Jun<span>Wednesday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Teacher Support</strong>
-                  <span>How VR helps teachers explain topics clearly</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Trust</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-carousel">Carousel</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>5 Ways VR Helps Students Learn Better</strong><span>Easy points for school audience</span></td>
+                <td class="make-cell" data-label="How to Create">Canva slides with icons, short points, and soft visuals</td>
+                <td class="goal-cell" data-label="Purpose">Engagement</td>
               </tr>
             </tbody>
           </table>
@@ -1063,6 +1071,7 @@
                 <th>Date</th>
                 <th>Format</th>
                 <th>Content Idea</th>
+                <th>How to Create Without Shoot</th>
                 <th>Purpose</th>
               </tr>
             </thead>
@@ -1071,71 +1080,57 @@
               <tr>
                 <td class="date-cell" data-label="Date">25 Jun<span>Thursday</span></td>
                 <td class="format-cell" data-label="Format"><span class="format-badge badge-reel">Reel</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Textbook vs VR</strong>
-                  <span>Show how VR makes learning easier</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Engage</td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Learning Beyond Textbooks</strong><span>Show book to VR experience transition</span></td>
+                <td class="make-cell" data-label="How to Create">Motion graphics showing book → screen → VR experience</td>
+                <td class="goal-cell" data-label="Purpose">Awareness</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">26 Jun<span>Friday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>VR for Science</strong>
-                  <span>Show how VR can explain science concepts</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Education</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Social Post</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Future of Classroom Learning</strong><span>Modern classroom direction</span></td>
+                <td class="make-cell" data-label="How to Create">Futuristic classroom graphic with VR elements</td>
+                <td class="goal-cell" data-label="Purpose">Positioning</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">27 Jun<span>Saturday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-blog">Blog</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Smart Classrooms</strong>
-                  <span>Blog on future-ready learning in schools</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Website</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Social Post</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Smart Classroom Upgrade</strong><span>Show classroom improvement idea</span></td>
+                <td class="make-cell" data-label="How to Create">Canva post showing old classroom vs smart classroom concept</td>
+                <td class="goal-cell" data-label="Purpose">Awareness</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">28 Jun<span>Sunday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Student Learning Impact</strong>
-                  <span>How VR helps students remember concepts</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Trust</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-blog">Blog</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>How VR Improves Student Attention</strong><span>Blog about interest and focus</span></td>
+                <td class="make-cell" data-label="How to Create">Educational blog focused on attention, clarity, and interest</td>
+                <td class="goal-cell" data-label="Purpose">SEO</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">29 Jun<span>Monday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>3D & 360° Learning</strong>
-                  <span>Explain SparkVR’s learning format in simple words</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Info</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-carousel">Carousel</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Subjects That Become More Engaging with VR</strong><span>Subject-based content idea</span></td>
+                <td class="make-cell" data-label="How to Create">Slides for science, space, human body, geography, history</td>
+                <td class="goal-cell" data-label="Purpose">Education</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">30 Jun<span>Tuesday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>VR Lesson Preview</strong>
-                  <span>Show one topic in VR format through a simple post</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Interest</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-carousel">Carousel</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>A Virtual School Journey</strong><span>Explain classroom to VR learning journey</span></td>
+                <td class="make-cell" data-label="How to Create">Animated-style Canva slides: classroom → topic selection → VR lesson</td>
+                <td class="goal-cell" data-label="Purpose">Awareness</td>
               </tr>
 
               <tr>
-                <td class="date-cell" data-label="Date">1 Jul<span>Wednesday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Benefits for Schools</strong>
-                  <span>How SparkVR can improve classroom experience</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Awareness</td>
+                <td class="date-cell" data-label="Date">01 Jul<span>Wednesday</span></td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Social Post</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Human Anatomy Through VR</strong><span>Use anatomy as a visual learning example</span></td>
+                <td class="make-cell" data-label="How to Create">3D anatomy-style graphic or AI-generated educational visual</td>
+                <td class="goal-cell" data-label="Purpose">Education</td>
               </tr>
             </tbody>
           </table>
@@ -1153,79 +1148,66 @@
                 <th>Date</th>
                 <th>Format</th>
                 <th>Content Idea</th>
+                <th>How to Create Without Shoot</th>
                 <th>Purpose</th>
               </tr>
             </thead>
 
             <tbody>
               <tr>
-                <td class="date-cell" data-label="Date">2 Jul<span>Thursday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-reel">Reel</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Founder Message</strong>
-                  <span>Short founder reel on why VR learning is useful for schools</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Trust</td>
-              </tr>
-
-              <tr>
-                <td class="date-cell" data-label="Date">3 Jul<span>Friday</span></td>
+                <td class="date-cell" data-label="Date">02 Jul<span>Thursday</span></td>
                 <td class="format-cell" data-label="Format"><span class="format-badge badge-blog">Blog</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Benefits of VR Learning</strong>
-                  <span>Blog for schools and parents</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Website</td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Why Schools Are Adopting Immersive Learning</strong><span>Blog for decision-makers</span></td>
+                <td class="make-cell" data-label="How to Create">Simple article for school owners and principals</td>
+                <td class="goal-cell" data-label="Purpose">SEO</td>
               </tr>
 
               <tr>
-                <td class="date-cell" data-label="Date">4 Jul<span>Saturday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Anatomy Through VR</strong>
-                  <span>Show how difficult topics become easier</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Education</td>
-              </tr>
-
-              <tr>
-                <td class="date-cell" data-label="Date">5 Jul<span>Sunday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Value for Parents</strong>
-                  <span>How better understanding helps students</span>
-                </td>
+                <td class="date-cell" data-label="Date">03 Jul<span>Friday</span></td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Social Post</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Teachers + VR Learning</strong><span>Show teacher support angle</span></td>
+                <td class="make-cell" data-label="How to Create">Graphic showing how teachers can explain topics visually</td>
                 <td class="goal-cell" data-label="Purpose">Trust</td>
               </tr>
 
               <tr>
-                <td class="date-cell" data-label="Date">6 Jul<span>Monday</span></td>
+                <td class="date-cell" data-label="Date">04 Jul<span>Saturday</span></td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Social Post</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Myth vs Reality: VR in Education</strong><span>Break common doubts simply</span></td>
+                <td class="make-cell" data-label="How to Create">Canva comparison design with 3-4 simple myths</td>
+                <td class="goal-cell" data-label="Purpose">Engagement</td>
+              </tr>
+
+              <tr>
+                <td class="date-cell" data-label="Date">05 Jul<span>Sunday</span></td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-carousel">Carousel</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Experiential Learning Explained</strong><span>Explain learning by seeing and doing</span></td>
+                <td class="make-cell" data-label="How to Create">Slide-based explanation of learning by seeing and experiencing</td>
+                <td class="goal-cell" data-label="Purpose">Awareness</td>
+              </tr>
+
+              <tr>
+                <td class="date-cell" data-label="Date">06 Jul<span>Monday</span></td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Social Post</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>VR Learning Facts</strong><span>Simple facts about VR education</span></td>
+                <td class="make-cell" data-label="How to Create">Infographic-style post with simple facts</td>
+                <td class="goal-cell" data-label="Purpose">Engagement</td>
+              </tr>
+
+              <tr>
+                <td class="date-cell" data-label="Date">07 Jul<span>Tuesday</span></td>
                 <td class="format-cell" data-label="Format"><span class="format-badge badge-reel">Reel</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Student Experience</strong>
-                  <span>Students using or reacting to VR learning</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Reach</td>
+                <td class="idea-cell" data-label="Content Idea"><strong>3D Concept Preview</strong><span>Show a sample visual lesson feel</span></td>
+                <td class="make-cell" data-label="How to Create">Use 3D/AI visuals of atom, cells, space, or anatomy with captions</td>
+                <td class="goal-cell" data-label="Purpose">Awareness</td>
               </tr>
 
               <tr>
-                <td class="date-cell" data-label="Date">7 Jul<span>Tuesday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Classroom Demo Recap</strong>
-                  <span>Simple post from workshop or demo activity</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Proof</td>
-              </tr>
-
-              <tr>
-                <td class="date-cell" data-label="Date">8 Jul<span>Wednesday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Workshop Information</strong>
-                  <span>Share details about SparkVR school workshop</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Enquiry</td>
+                <td class="date-cell" data-label="Date">08 Jul<span>Wednesday</span></td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Social Post</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Student-Centric Learning</strong><span>Show how learning can become easier</span></td>
+                <td class="make-cell" data-label="How to Create">Graphic post on making learning easier and more interesting</td>
+                <td class="goal-cell" data-label="Purpose">Education</td>
               </tr>
             </tbody>
           </table>
@@ -1243,99 +1225,82 @@
                 <th>Date</th>
                 <th>Format</th>
                 <th>Content Idea</th>
+                <th>How to Create Without Shoot</th>
                 <th>Purpose</th>
               </tr>
             </thead>
 
             <tbody>
               <tr>
-                <td class="date-cell" data-label="Date">9 Jul<span>Thursday</span></td>
+                <td class="date-cell" data-label="Date">09 Jul<span>Thursday</span></td>
                 <td class="format-cell" data-label="Format"><span class="format-badge badge-blog">Blog</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Immersive Learning</strong>
-                  <span>Blog on how visual learning helps students</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Website</td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Making Complex Concepts Easy with VR</strong><span>Subject-focused educational blog</span></td>
+                <td class="make-cell" data-label="How to Create">Educational article with examples from school subjects</td>
+                <td class="goal-cell" data-label="Purpose">SEO</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">10 Jul<span>Friday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>How Teachers Use SparkVR</strong>
-                  <span>Simple classroom use case for teachers</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Trust</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Social Post</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Quote on Innovation in Education</strong><span>Simple branded thought post</span></td>
+                <td class="make-cell" data-label="How to Create">Branded quote design with SparkVR theme</td>
+                <td class="goal-cell" data-label="Purpose">Recall</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">11 Jul<span>Saturday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Common Questions</strong>
-                  <span>Answer simple questions schools may ask</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Info</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-carousel">Carousel</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Journey of a Student in a VR Classroom</strong><span>Show the learning journey visually</span></td>
+                <td class="make-cell" data-label="How to Create">Visual storytelling: confusion → experience → clarity</td>
+                <td class="goal-cell" data-label="Purpose">Engagement</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">12 Jul<span>Sunday</span></td>
                 <td class="format-cell" data-label="Format"><span class="format-badge badge-reel">Reel</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>VR Demo Walkthrough</strong>
-                  <span>Short demo-style video for schools</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Interest</td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Science Learning Through VR</strong><span>Science concept reel without shoot</span></td>
+                <td class="make-cell" data-label="How to Create">Stock science visuals + animated labels + VR-style transitions</td>
+                <td class="goal-cell" data-label="Purpose">Awareness</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">13 Jul<span>Monday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>School Enquiry Info</strong>
-                  <span>How schools can ask about demo or workshop</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Enquiry</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Social Post</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Why Interactive Learning Matters</strong><span>Explain learning interaction simply</span></td>
+                <td class="make-cell" data-label="How to Create">Canva infographic with simple points</td>
+                <td class="goal-cell" data-label="Purpose">Awareness</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">14 Jul<span>Tuesday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>VR Learning Facts</strong>
-                  <span>Simple facts about visual and VR learning</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Education</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-blog">Blog</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>The Future of EdTech and VR</strong><span>Blog around future-ready classrooms</span></td>
+                <td class="make-cell" data-label="How to Create">SEO article about future-ready classrooms</td>
+                <td class="goal-cell" data-label="Purpose">Website</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">15 Jul<span>Wednesday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Workshop Reminder</strong>
-                  <span>Remind schools about SparkVR workshop option</span>
-                </td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-carousel">Carousel</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>5 Reasons Schools Should Explore VR</strong><span>Simple school benefit carousel</span></td>
+                <td class="make-cell" data-label="How to Create">Slides focused on school benefits, student interest, and modern learning</td>
                 <td class="goal-cell" data-label="Purpose">Enquiry</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">16 Jul<span>Thursday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-blog">Blog</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Future of Learning</strong>
-                  <span>Blog on VR and modern school education</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Website</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-reel">Reel</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>SparkVR Vision for Future Learning</strong><span>Brand vision reel</span></td>
+                <td class="make-cell" data-label="How to Create">Motion graphics + brand assets + voiceover/text</td>
+                <td class="goal-cell" data-label="Purpose">Branding</td>
               </tr>
 
               <tr>
                 <td class="date-cell" data-label="Date">17 Jul<span>Friday</span></td>
-                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Post</span></td>
-                <td class="idea-cell" data-label="Content Idea">
-                  <strong>Monthly Recap</strong>
-                  <span>Simple recap of SparkVR learning content</span>
-                </td>
-                <td class="goal-cell" data-label="Purpose">Recall</td>
+                <td class="format-cell" data-label="Format"><span class="format-badge badge-post">Social Post</span></td>
+                <td class="idea-cell" data-label="Content Idea"><strong>Month Recap & Key Insights</strong><span>Simple recap of the month</span></td>
+                <td class="make-cell" data-label="How to Create">Collage-style graphic summarizing key learning themes</td>
+                <td class="goal-cell" data-label="Purpose">Engagement</td>
               </tr>
             </tbody>
           </table>
