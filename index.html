@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SparkVR Monthly Content Plan</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+
+    :root {
+      --blue: #1f63ff;
+      --sky: #39b8ff;
+      --purple: #b646ff;
+      --dark: #071126;
+      --text: #2f2a25;
+      --muted: #6b6862;
+      --cream: #fbfaf6;
+      --cream2: #f3efe8;
+      --green: #8fa292;
+      --brown: #c87355;
+      --white: #ffffff;
+      --line: #e2ddd4;
+      --shadow: 0 24px 60px rgba(65, 54, 44, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 92% 4%, rgba(228, 220, 205, 0.85) 0 13%, transparent 14%),
+        radial-gradient(circle at 5% 96%, rgba(228, 220, 205, 0.55) 0 10%, transparent 11%),
+        linear-gradient(135deg, #ffffff 0%, #f7f4ee 100%);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1320px, 92%);
+      margin: auto;
+    }
+
+    /* Header */
+
+    .topbar {
+      padding: 24px 0;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(251, 250, 246, 0.82);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(226, 221, 212, 0.7);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-mark {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--blue), var(--sky));
+      color: white;
+      font-family: Fredoka, sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      box-shadow: 0 14px 34px rgba(31, 99, 255, 0.2);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-family: Fredoka, sans-serif;
+      color: var(--blue);
+      font-size: 23px;
+      line-height: 1;
+    }
+
+    .brand-text span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav a:hover {
+      color: var(--blue);
+    }
+
+    /* Cover */
+
+    .cover {
+      padding: 80px 0 58px;
+    }
+
+    .cover-box {
+      min-height: 480px;
+      border-radius: 42px;
+      background:
+        radial-gradient(circle at 78% 20%, rgba(57, 184, 255, 0.28), transparent 30%),
+        radial-gradient(circle at 25% 12%, rgba(182, 70, 255, 0.10), transparent 28%),
+        linear-gradient(135deg, #ffffff 0%, #edf7ff 100%);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 0 35px 95px rgba(31, 99, 255, 0.13);
+      padding: 64px;
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .cover-box::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle, rgba(31, 99, 255, 0.13) 1.4px, transparent 1.4px);
+      background-size: 44px 44px;
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    .cover-content,
+    .cover-visual {
+      position: relative;
+      z-index: 2;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.78);
+      color: var(--blue);
+      font-weight: 800;
+      margin-bottom: 22px;
+      border: 1px solid rgba(31, 99, 255, 0.12);
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--purple), var(--sky));
+      box-shadow: 0 0 18px rgba(31, 99, 255, 0.45);
+    }
+
+    h1 {
+      font-family: Fredoka, sans-serif;
+      font-size: clamp(44px, 6vw, 78px);
+      line-height: 0.98;
+      letter-spacing: -1.5px;
+      color: var(--dark);
+      margin-bottom: 22px;
+    }
+
+    .grad {
+      background: linear-gradient(90deg, var(--purple), var(--blue), var(--sky));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .cover-content p {
+      font-size: 18px;
+      line-height: 1.75;
+      color: var(--muted);
+      max-width: 620px;
+    }
+
+    .cover-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .info-card {
+      padding: 18px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.76);
+      border: 1px solid rgba(255,255,255,0.9);
+      box-shadow: 0 18px 40px rgba(31, 99, 255, 0.08);
+    }
+
+    .info-card strong {
+      display: block;
+      font-family: Fredoka, sans-serif;
+      color: var(--blue);
+      font-size: 25px;
+      margin-bottom: 4px;
+    }
+
+    .info-card span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+      font-weight: 600;
+    }
+
+    .cover-visual {
+      min-height: 360px;
+      position: relative;
+      display: grid;
+      place-items: center;
+    }
+
+    .vr-card {
+      width: min(360px, 90%);
+      min-height: 360px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 35% 25%, #ffffff, rgba(57,184,255,0.26) 45%, rgba(31,99,255,0.13));
+      border: 12px solid rgba(255,255,255,0.62);
+      box-shadow: 0 35px 85px rgba(31, 99, 255, 0.17);
+      font-size: 120px;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .bubble {
+      position: absolute;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: white;
+      color: var(--blue);
+      font-family: Fredoka, sans-serif;
+      font-weight: 800;
+      box-shadow: 0 16px 40px rgba(31, 99, 255, 0.12);
+      border: 1px solid rgba(31, 99, 255, 0.1);
+    }
+
+    .bubble.one { top: 20px; left: 40px; }
+    .bubble.two { top: 80px; right: 10px; color: var(--purple); }
+    .bubble.three { bottom: 58px; left: 10px; }
+    .bubble.four { bottom: 20px; right: 54px; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-16px); }
+    }
+
+    /* Common */
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      margin-bottom: 34px;
+    }
+
+    .section-title h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 0.98;
+      color: #3d3028;
+      letter-spacing: -1px;
+      margin-bottom: 7px;
+    }
+
+    .section-title p {
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 17px;
+      font-weight: 600;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .title-line {
+      width: 112px;
+      height: 4px;
+      background: var(--brown);
+      margin-top: 18px;
+    }
+
+    .simple-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .simple-card {
+      background: rgba(255,255,255,0.92);
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,0.95);
+    }
+
+    .simple-card h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #3d3028;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .simple-card p,
+    .simple-card li {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* Calendar */
+
+    .calendar-section {
+      padding: 78px 0 95px;
+    }
+
+    .calendar-board {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 44px;
+    }
+
+    .calendar-card {
+      background: rgba(255, 255, 255, 0.94);
+      border-radius: 8px;
+      padding: 22px 22px 28px;
+      box-shadow: var(--shadow);
+      border-top: 6px solid var(--brown);
+      min-height: 560px;
+    }
+
+    .calendar-card.green {
+      border-top-color: var(--green);
+    }
+
+    .calendar-card.blue {
+      border-top-color: #2f80ed;
+    }
+
+    .calendar-card.purple {
+      border-top-color: #9b6bff;
+    }
+
+    .calendar-card-head {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 24px;
+      padding: 4px 4px 0;
+    }
+
+    .calendar-icon {
+      min-width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: var(--brown);
+      font-weight: 800;
+      font-size: 14px;
+      font-family: Inter, sans-serif;
+    }
+
+    .calendar-card.green .calendar-icon {
+      background: var(--green);
+    }
+
+    .calendar-card.blue .calendar-icon {
+      background: #2f80ed;
+    }
+
+    .calendar-card.purple .calendar-icon {
+      background: #9b6bff;
+    }
+
+    .calendar-card h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #3d3028;
+      font-size: 27px;
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+    }
+
+    .calendar-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .calendar-table th {
+      text-align: left;
+      color: var(--green);
+      font-family: Georgia, "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      font-size: 13px;
+      padding: 12px 12px 14px;
+      border-bottom: 2px solid #ddd9d1;
+    }
+
+    .calendar-table td {
+      padding: 13px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: middle;
+      color: #3f3833;
+      font-size: 14px;
+    }
+
+    .calendar-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .day-cell {
+      width: 64px;
+      font-weight: 800;
+      color: #2e2823 !important;
+    }
+
+    .format-cell {
+      width: 105px;
+    }
+
+    .idea-cell strong {
+      display: block;
+      color: #4a3d35;
+      font-weight: 800;
+      margin-bottom: 3px;
+    }
+
+    .idea-cell span {
+      display: block;
+      color: #6e665f;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .goal-cell {
+      width: 100px;
+      font-style: italic;
+      color: #6e665f !important;
+      font-size: 13px !important;
+    }
+
+    .format-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 9px;
+      border-radius: 6px;
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border: 1px solid transparent;
+    }
+
+    .badge-reel {
+      color: #c25f43;
+      background: #fff3ed;
+      border-color: #efc8b8;
+    }
+
+    .badge-story {
+      color: #cc972e;
+      background: #fff8e8;
+      border-color: #efdcae;
+    }
+
+    .badge-carousel {
+      color: #407657;
+      background: #edf8f1;
+      border-color: #c5dfce;
+    }
+
+    .badge-static {
+      color: #4b403b;
+      background: #f4efec;
+      border-color: #ddd4ce;
+    }
+
+    .badge-blog {
+      color: #256ec7;
+      background: #edf5ff;
+      border-color: #bdd8ff;
+    }
+
+    .badge-founder {
+      color: #7854c9;
+      background: #f4efff;
+      border-color: #d8caff;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 35px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--line);
+      background: rgba(255,255,255,0.6);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: 0.75s ease;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1100px) {
+      .cover-box {
+        grid-template-columns: 1fr;
+      }
+
+      .calendar-board {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .simple-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cover-info {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .nav {
+        display: none;
+      }
+
+      .cover {
+        padding-top: 45px;
+      }
+
+      .cover-box {
+        padding: 34px 22px;
+        border-radius: 28px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .cover-visual {
+        min-height: 320px;
+      }
+
+      .vr-card {
+        min-height: 260px;
+        font-size: 82px;
+      }
+
+      .bubble {
+        position: static;
+        display: inline-flex;
+        margin: 6px;
+      }
+
+      .calendar-card {
+        padding: 18px 12px 22px;
+        overflow-x: auto;
+      }
+
+      .calendar-table {
+        min-width: 650px;
+      }
+
+      .calendar-card h3 {
+        font-size: 23px;
+      }
+
+      .section-title h2 {
+        font-size: 36px;
+      }
+
+      .section-title p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="logo-mark">SV</div>
+        <div class="brand-text">
+          <strong>SparkVR</strong>
+          <span>Monthly Content Plan</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#overview">Overview</a>
+        <a href="#focus">Content Focus</a>
+        <a href="#calendar">Calendar</a>
+        <a href="#founder">Founder Value</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- COVER -->
+  <section class="cover">
+    <div class="container">
+      <div class="cover-box reveal">
+        <div class="cover-content">
+          <div class="tag">
+            <span class="dot"></span>
+            Prepared for SparkVR
+          </div>
+
+          <h1>
+            Monthly Social Media
+            <span class="grad">Content Plan</span>
+          </h1>
+
+          <p>
+            This plan is made to keep SparkVR’s social media simple, useful, and easy to understand.
+            The focus is on VR learning, school awareness, classroom benefits, and regular enquiries from schools.
+          </p>
+
+          <div class="cover-info">
+            <div class="info-card">
+              <strong>20</strong>
+              <span>Social media posts</span>
+            </div>
+
+            <div class="info-card">
+              <strong>5</strong>
+              <span>Short reels</span>
+            </div>
+
+            <div class="info-card">
+              <strong>5</strong>
+              <span>Website blogs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cover-visual">
+          <div class="vr-card">🥽</div>
+          <div class="bubble one">Atoms</div>
+          <div class="bubble two">Anatomy</div>
+          <div class="bubble three">Cells</div>
+          <div class="bubble four">Space</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section id="overview">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Plan Overview</h2>
+        <p>Simple direction for the month</p>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="simple-grid">
+        <div class="simple-card reveal">
+          <h3>Goal</h3>
+          <p>
+            To make more schools aware of SparkVR and explain how VR can help students learn better.
+          </p>
+        </div>
+
+        <div class="simple-card reveal">
+          <h3>Audience</h3>
+          <p>
+            School owners, principals, teachers, parents, and students from classes 5th to 10th.
+          </p>
+        </div>
+
+        <div class="simple-card reveal">
+          <h3>Style</h3>
+          <p>
+            Clean, bright, school-friendly, and easy to understand with simple words and clear visuals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT FOCUS -->
+  <section id="focus">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Content Focus</h2>
+        <p>What we will talk about</p>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="simple-grid">
+        <div class="simple-card reveal">
+          <h3>VR Learning</h3>
+          <p>
+            Show how students can understand topics better with 3D and 360° learning.
+          </p>
+        </div>
+
+        <div class="simple-card reveal">
+          <h3>Classroom Benefits</h3>
+          <p>
+            Explain how SparkVR can help teachers explain difficult topics in a simple way.
+          </p>
+        </div>
+
+        <div class="simple-card reveal">
+          <h3>School Enquiries</h3>
+          <p>
+            Share content that encourages schools to ask about demos, workshops, and VR lessons.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section id="calendar" class="calendar-section">
+    <div class="container">
+
+      <div class="section-title reveal">
+        <h2>Monthly Content Calendar</h2>
+        <p>Weeks 1–2</p>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="calendar-board">
+
+        <!-- WEEK 1 -->
+        <div class="calendar-card reveal">
+          <div class="calendar-card-head">
+            <div class="calendar-icon">01</div>
+            <h3>Week 1 — Introduction & Awareness</h3>
+          </div>
+
+          <table class="calendar-table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Format</th>
+                <th>Content Idea</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="day-cell">Mon</td>
+                <td class="format-cell"><span class="format-badge badge-reel">Reel</span></td>
+                <td class="idea-cell">
+                  <strong>What is SparkVR?</strong>
+                  <span>Simple intro of VR learning for schools</span>
+                </td>
+                <td class="goal-cell">Awareness</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Tue</td>
+                <td class="format-cell"><span class="format-badge badge-static">Post</span></td>
+                <td class="idea-cell">
+                  <strong>Why Visual Learning?</strong>
+                  <span>How students understand better with visuals</span>
+                </td>
+                <td class="goal-cell">Education</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Wed</td>
+                <td class="format-cell"><span class="format-badge badge-carousel">Carousel</span></td>
+                <td class="idea-cell">
+                  <strong>Benefits of VR Learning</strong>
+                  <span>Simple benefits for schools and students</span>
+                </td>
+                <td class="goal-cell">Value</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Thu</td>
+                <td class="format-cell"><span class="format-badge badge-reel">Reel</span></td>
+                <td class="idea-cell">
+                  <strong>Textbook vs VR</strong>
+                  <span>How VR makes learning easier</span>
+                </td>
+                <td class="goal-cell">Engagement</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Fri</td>
+                <td class="format-cell"><span class="format-badge badge-static">Post</span></td>
+                <td class="idea-cell">
+                  <strong>VR for Schools</strong>
+                  <span>How SparkVR supports classroom learning</span>
+                </td>
+                <td class="goal-cell">Trust</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Sat</td>
+                <td class="format-cell"><span class="format-badge badge-story">Story</span></td>
+                <td class="idea-cell">
+                  <strong>Quick Poll</strong>
+                  <span>Ask audience about visual learning</span>
+                </td>
+                <td class="goal-cell">Interaction</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Sun</td>
+                <td class="format-cell"><span class="format-badge badge-blog">Blog</span></td>
+                <td class="idea-cell">
+                  <strong>VR in Education</strong>
+                  <span>Blog on VR in classroom learning</span>
+                </td>
+                <td class="goal-cell">Website</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- WEEK 2 -->
+        <div class="calendar-card green reveal">
+          <div class="calendar-card-head">
+            <div class="calendar-icon">02</div>
+            <h3>Week 2 — Product & Learning Use Cases</h3>
+          </div>
+
+          <table class="calendar-table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Format</th>
+                <th>Content Idea</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="day-cell">Mon</td>
+                <td class="format-cell"><span class="format-badge badge-reel">Reel</span></td>
+                <td class="idea-cell">
+                  <strong>VR Lesson Preview</strong>
+                  <span>Show one topic in VR format</span>
+                </td>
+                <td class="goal-cell">Interest</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Tue</td>
+                <td class="format-cell"><span class="format-badge badge-carousel">Carousel</span></td>
+                <td class="idea-cell">
+                  <strong>Classes 5th to 10th</strong>
+                  <span>Show how SparkVR helps different classes</span>
+                </td>
+                <td class="goal-cell">Info</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Wed</td>
+                <td class="format-cell"><span class="format-badge badge-static">Post</span></td>
+                <td class="idea-cell">
+                  <strong>Teacher Support</strong>
+                  <span>How VR helps teachers explain clearly</span>
+                </td>
+                <td class="goal-cell">Trust</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Thu</td>
+                <td class="format-cell"><span class="format-badge badge-reel">Reel</span></td>
+                <td class="idea-cell">
+                  <strong>Student Experience</strong>
+                  <span>Students using or reacting to VR learning</span>
+                </td>
+                <td class="goal-cell">Engage</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Fri</td>
+                <td class="format-cell"><span class="format-badge badge-founder">Founder</span></td>
+                <td class="idea-cell">
+                  <strong>Founder Message</strong>
+                  <span>Short message on why VR learning is useful</span>
+                </td>
+                <td class="goal-cell">Trust</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Sat</td>
+                <td class="format-cell"><span class="format-badge badge-story">Story</span></td>
+                <td class="idea-cell">
+                  <strong>Quiz Story</strong>
+                  <span>Simple education-based quiz</span>
+                </td>
+                <td class="goal-cell">Interaction</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Sun</td>
+                <td class="format-cell"><span class="format-badge badge-blog">Blog</span></td>
+                <td class="idea-cell">
+                  <strong>Smart Classrooms</strong>
+                  <span>Blog on future-ready learning in schools</span>
+                </td>
+                <td class="goal-cell">Website</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <div class="section-title reveal" style="margin-top: 70px;">
+        <h2>Monthly Content Calendar</h2>
+        <p>Weeks 3–4</p>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="calendar-board">
+
+        <!-- WEEK 3 -->
+        <div class="calendar-card blue reveal">
+          <div class="calendar-card-head">
+            <div class="calendar-icon">03</div>
+            <h3>Week 3 — Trust & School Benefits</h3>
+          </div>
+
+          <table class="calendar-table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Format</th>
+                <th>Content Idea</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="day-cell">Mon</td>
+                <td class="format-cell"><span class="format-badge badge-reel">Reel</span></td>
+                <td class="idea-cell">
+                  <strong>Classroom Experience</strong>
+                  <span>Show how VR can be used in class</span>
+                </td>
+                <td class="goal-cell">Proof</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Tue</td>
+                <td class="format-cell"><span class="format-badge badge-carousel">Carousel</span></td>
+                <td class="idea-cell">
+                  <strong>Benefits for Schools</strong>
+                  <span>How VR improves learning experience</span>
+                </td>
+                <td class="goal-cell">Education</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Wed</td>
+                <td class="format-cell"><span class="format-badge badge-static">Post</span></td>
+                <td class="idea-cell">
+                  <strong>Modern Classroom</strong>
+                  <span>Upgrading classrooms with VR learning</span>
+                </td>
+                <td class="goal-cell">Awareness</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Thu</td>
+                <td class="format-cell"><span class="format-badge badge-reel">Reel</span></td>
+                <td class="idea-cell">
+                  <strong>Topic Demo</strong>
+                  <span>One topic explained through VR</span>
+                </td>
+                <td class="goal-cell">Interest</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Fri</td>
+                <td class="format-cell"><span class="format-badge badge-founder">Founder</span></td>
+                <td class="idea-cell">
+                  <strong>Founder Note</strong>
+                  <span>Short thought on improving school learning</span>
+                </td>
+                <td class="goal-cell">Trust</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Sat</td>
+                <td class="format-cell"><span class="format-badge badge-story">Story</span></td>
+                <td class="idea-cell">
+                  <strong>Question Box</strong>
+                  <span>Ask schools about teaching challenges</span>
+                </td>
+                <td class="goal-cell">Interaction</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Sun</td>
+                <td class="format-cell"><span class="format-badge badge-blog">Blog</span></td>
+                <td class="idea-cell">
+                  <strong>Visual Learning</strong>
+                  <span>Blog on how visual learning helps students</span>
+                </td>
+                <td class="goal-cell">Website</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- WEEK 4 -->
+        <div class="calendar-card purple reveal">
+          <div class="calendar-card-head">
+            <div class="calendar-icon">04</div>
+            <h3>Week 4 — Demo & Enquiries</h3>
+          </div>
+
+          <table class="calendar-table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Format</th>
+                <th>Content Idea</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="day-cell">Mon</td>
+                <td class="format-cell"><span class="format-badge badge-static">Post</span></td>
+                <td class="idea-cell">
+                  <strong>School Workshop Info</strong>
+                  <span>Share details about SparkVR workshop</span>
+                </td>
+                <td class="goal-cell">Enquiry</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Tue</td>
+                <td class="format-cell"><span class="format-badge badge-carousel">Carousel</span></td>
+                <td class="idea-cell">
+                  <strong>Workshop Details</strong>
+                  <span>What schools will see in the workshop</span>
+                </td>
+                <td class="goal-cell">Info</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Wed</td>
+                <td class="format-cell"><span class="format-badge badge-reel">Reel</span></td>
+                <td class="idea-cell">
+                  <strong>VR Demo Walkthrough</strong>
+                  <span>Short demo-style video</span>
+                </td>
+                <td class="goal-cell">Interest</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Thu</td>
+                <td class="format-cell"><span class="format-badge badge-story">Story</span></td>
+                <td class="idea-cell">
+                  <strong>Ask a Question</strong>
+                  <span>Let audience ask about VR learning</span>
+                </td>
+                <td class="goal-cell">Engage</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Fri</td>
+                <td class="format-cell"><span class="format-badge badge-founder">Founder</span></td>
+                <td class="idea-cell">
+                  <strong>Workshop Message</strong>
+                  <span>Simple founder message for schools</span>
+                </td>
+                <td class="goal-cell">Trust</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Sat</td>
+                <td class="format-cell"><span class="format-badge badge-reel">Reel</span></td>
+                <td class="idea-cell">
+                  <strong>Month Recap</strong>
+                  <span>Best VR learning moments of the month</span>
+                </td>
+                <td class="goal-cell">Recall</td>
+              </tr>
+
+              <tr>
+                <td class="day-cell">Sun</td>
+                <td class="format-cell"><span class="format-badge badge-blog">Blog</span></td>
+                <td class="idea-cell">
+                  <strong>Future of Learning</strong>
+                  <span>Blog on VR and modern school education</span>
+                </td>
+                <td class="goal-cell">Website</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER VALUE -->
+  <section id="founder">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Founder Face Value</h2>
+        <p>Small trust-building content</p>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="simple-grid">
+        <div class="simple-card reveal">
+          <h3>Short Videos</h3>
+          <p>
+            Simple founder videos explaining the idea behind SparkVR and how it helps schools.
+          </p>
+        </div>
+
+        <div class="simple-card reveal">
+          <h3>School Visits</h3>
+          <p>
+            Small clips or photos from workshops, demos, and school meetings.
+          </p>
+        </div>
+
+        <div class="simple-card reveal">
+          <h3>Simple Thoughts</h3>
+          <p>
+            Easy-to-understand messages about better learning, visual education, and modern classrooms.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Prepared by Cinfy.co for SparkVR
+  </footer>
+
+  <script>
+    const revealElements = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+      const trigger = window.innerHeight * 0.86;
+
+      revealElements.forEach((el) => {
+        const top = el.getBoundingClientRect().top;
+
+        if (top < trigger) {
+          el.classList.add("active");
+        }
+      });
+    }
+
+    window.addEventListener("load", revealOnScroll);
+    window.addEventListener("scroll", revealOnScroll);
+  </script>
+
+</body>
+</html>
